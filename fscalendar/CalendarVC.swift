@@ -12,7 +12,7 @@ import Then
 protocol dateDelegate {
     func updateData(date : String)
 }
-class ViewController: UIViewController{
+class CalendarVC: UIViewController{
     var dateSendDelegate : dateDelegate? = nil
     fileprivate weak var calendar: FSCalendar!
     private lazy var safeArea = self.view.safeAreaLayoutGuide
@@ -136,7 +136,7 @@ class ViewController: UIViewController{
         self.calendar.setCurrentPage(self.currentPage!, animated: true)
     }
 }
-extension ViewController: FSCalendarDelegate, FSCalendarDataSource, FSCalendarDelegateAppearance {
+extension CalendarVC: FSCalendarDelegate, FSCalendarDataSource, FSCalendarDelegateAppearance {
     func setCalendar() {
         calendar.headerHeight = 0
         calendar.scope = .month
@@ -158,7 +158,6 @@ extension ViewController: FSCalendarDelegate, FSCalendarDataSource, FSCalendarDe
         } else { return nil}
     }
     func calendar(_ calendar: FSCalendar, didSelect date: Date, at monthPosition: FSCalendarMonthPosition) {
-        print(dateFormatter.string(from: date) + " 선택됨")
         dateFormatter.dateFormat = "yyyy.MM.dd"
         print(dateFormatter.string(from: date))
            self.dateSendDelegate?.updateData(date : dateFormatter.string(from: date))

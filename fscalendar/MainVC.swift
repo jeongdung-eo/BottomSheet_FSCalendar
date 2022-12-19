@@ -9,7 +9,7 @@ import UIKit
 import Then
 import SnapKit
 
-class MainViewController: UIViewController,dateDelegate {
+class MainVC: UIViewController,dateDelegate {
     var date = Date()
     private lazy var titleLabel = UILabel().then{
         $0.text = "실천 날짜"
@@ -56,7 +56,7 @@ class MainViewController: UIViewController,dateDelegate {
     }
     @objc func btnTapped(_sender : UIButton){
         print("tapped")
-        let dateVC = ViewController()
+        let dateVC = CalendarVC()
         present(dateVC, animated: true, completion: nil)
         dateVC.dateSendDelegate = self
     }

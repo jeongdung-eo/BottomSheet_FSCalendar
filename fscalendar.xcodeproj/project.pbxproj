@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		092F9FCA2950FA2F00B1848F /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092F9FC92950FA2F00B1848F /* MainViewController.swift */; };
+		092F9FCA2950FA2F00B1848F /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092F9FC92950FA2F00B1848F /* MainVC.swift */; };
 		09447B0329506A4E0049946D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09447B0229506A4E0049946D /* AppDelegate.swift */; };
 		09447B0529506A4E0049946D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09447B0429506A4E0049946D /* SceneDelegate.swift */; };
-		09447B0729506A4E0049946D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09447B0629506A4E0049946D /* ViewController.swift */; };
+		09447B0729506A4E0049946D /* CalendarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09447B0629506A4E0049946D /* CalendarVC.swift */; };
 		09447B0A29506A4E0049946D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09447B0829506A4E0049946D /* Main.storyboard */; };
 		09447B0C29506A4E0049946D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09447B0B29506A4E0049946D /* Assets.xcassets */; };
 		09447B0F29506A4E0049946D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09447B0D29506A4E0049946D /* LaunchScreen.storyboard */; };
@@ -20,11 +20,11 @@
 
 /* Begin PBXFileReference section */
 		05283209BAA243FF182CA2DA /* Pods-fscalendar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fscalendar.debug.xcconfig"; path = "Target Support Files/Pods-fscalendar/Pods-fscalendar.debug.xcconfig"; sourceTree = "<group>"; };
-		092F9FC92950FA2F00B1848F /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		092F9FC92950FA2F00B1848F /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		09447AFF29506A4E0049946D /* fscalendar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fscalendar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09447B0229506A4E0049946D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		09447B0429506A4E0049946D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		09447B0629506A4E0049946D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		09447B0629506A4E0049946D /* CalendarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarVC.swift; sourceTree = "<group>"; };
 		09447B0929506A4E0049946D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		09447B0B29506A4E0049946D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		09447B0E29506A4E0049946D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -69,8 +69,8 @@
 			children = (
 				09447B0229506A4E0049946D /* AppDelegate.swift */,
 				09447B0429506A4E0049946D /* SceneDelegate.swift */,
-				09447B0629506A4E0049946D /* ViewController.swift */,
-				092F9FC92950FA2F00B1848F /* MainViewController.swift */,
+				09447B0629506A4E0049946D /* CalendarVC.swift */,
+				092F9FC92950FA2F00B1848F /* MainVC.swift */,
 				09447B162950807A0049946D /* UICOLOR+Extension.swift */,
 				09447B0829506A4E0049946D /* Main.storyboard */,
 				09447B0B29506A4E0049946D /* Assets.xcassets */,
@@ -212,11 +212,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				09447B0729506A4E0049946D /* ViewController.swift in Sources */,
+				09447B0729506A4E0049946D /* CalendarVC.swift in Sources */,
 				09447B0329506A4E0049946D /* AppDelegate.swift in Sources */,
 				09447B0529506A4E0049946D /* SceneDelegate.swift in Sources */,
 				09447B172950807A0049946D /* UICOLOR+Extension.swift in Sources */,
-				092F9FCA2950FA2F00B1848F /* MainViewController.swift in Sources */,
+				092F9FCA2950FA2F00B1848F /* MainVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
